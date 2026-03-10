@@ -1,0 +1,52 @@
+{
+  "skill_name": "oficio-memorando-entidad",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Necesito un oficio para enviarle a la Contraloría General de la República. Soy Jefe de la Oficina de Control Interno de la Alcaldía de Manizales y me llegó un requerimiento de auditoría el día de hoy (9 de marzo de 2026) pidiendo el Plan Anual de Adquisiciones 2026 y los contratos suscritos en el primer trimestre. Necesito el oficio firmado por el Alcalde, Luis Eduardo Torres Ramírez. La Contraloría lo solicita el Dr. Carlos Mejía, Director de Vigilancia Fiscal.",
+      "expected_output": "Oficio .docx formal dirigido a la Contraloría, con estructura GTC-185, alerta de plazo de 5 días hábiles (fecha límite: 16 de marzo de 2026), checklist de conformidad normativa, y metadatos de radicación. El radicado debe estar en blanco.",
+      "files": [],
+      "assertions": [
+        "El archivo generado tiene extensión .docx",
+        "El documento incluye el nombre 'Luis Eduardo Torres Ramírez' como firmante",
+        "El documento está dirigido a 'Carlos Mejía' o 'Contraloría General'",
+        "El documento menciona el plazo de 5 días hábiles",
+        "El documento menciona el Plan Anual de Adquisiciones y/o contratos primer trimestre",
+        "El campo de radicado está en blanco o marcado para asignar en SGDEA",
+        "El checklist de conformidad normativa está presente",
+        "La fecha del documento es 9 de marzo de 2026 o similar"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Quiero un memorando interno. Soy la Directora de Talento Humano de la DIAN, me llamo Sandra Paola Guerrero López. Necesito comunicarle al Jefe de la División de Sistemas, Andrés Camilo Ríos Vargas, que debe enviarme el consolidado de ausentismo del primer trimestre antes del viernes 13 de marzo de 2026. Es urgente porque tenemos que presentarlo ante la Comisión de Personal el 17 de marzo.",
+      "expected_output": "Memorando .docx en formato interno con estructura PARA/DE/ASUNTO/FECHA, con el plazo claro del 13 de marzo, extensión máxima 1 página, checklist de conformidad y metadatos de radicación.",
+      "files": [],
+      "assertions": [
+        "El archivo generado tiene extensión .docx",
+        "El documento usa estructura de memorando (PARA / DE / ASUNTO / FECHA)",
+        "El destinatario es Andrés Camilo Ríos Vargas o Jefe División de Sistemas",
+        "El emisor es Sandra Paola Guerrero López o Directora de Talento Humano",
+        "El documento menciona la fecha límite 13 de marzo de 2026",
+        "El documento menciona la Comisión de Personal o el 17 de marzo",
+        "El checklist de conformidad está presente"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Necesito una circular para todos los funcionarios de mi entidad. Trabajo en la Secretaría de Educación de Bogotá D.C., soy el Subsecretario de Gestión Institucional, me llamo Fabio Hernando Casas Montes. La circular es para informar que a partir del 16 de marzo de 2026 es obligatorio el uso del sistema de gestión documental electrónico SIGA para TODOS los documentos, y que quien no lo use incurrirá en falta disciplinaria según el Código Disciplinario Único. También quiero que incluya que el equipo de Sistemas estará disponible para capacitaciones la semana del 23 al 27 de marzo.",
+      "expected_output": "Circular .docx dirigida a todos los funcionarios de la Secretaría de Educación, con referencia al CDU como fundamento disciplinario, estructura formal, fecha de vigencia 16 de marzo, información de capacitaciones, checklist de conformidad y metadatos.",
+      "files": [],
+      "assertions": [
+        "El archivo generado tiene extensión .docx",
+        "El documento es una circular (no un oficio ni memorando)",
+        "El firmante es Fabio Hernando Casas Montes o Subsecretario de Gestión Institucional",
+        "El documento menciona el SIGA o sistema de gestión documental",
+        "El documento menciona el 16 de marzo de 2026 como fecha de vigencia",
+        "El documento hace referencia al Código Disciplinario Único o falta disciplinaria",
+        "El documento menciona las capacitaciones del 23 al 27 de marzo",
+        "El checklist de conformidad está presente"
+      ]
+    }
+  ]
+}

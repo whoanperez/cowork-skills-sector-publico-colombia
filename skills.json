@@ -1,0 +1,187 @@
+{
+  "name": "cowork-skills-sector-publico-colombia",
+  "version": "1.0.0",
+  "description": "Skills de Cowork para generar documentos institucionales del sector público colombiano con conformidad MPIA-Bogotá",
+  "author": "Juan Camilo Pérez Cuervo",
+  "license": "MIT",
+  "platform": "cowork",
+  "model_minimum": "claude-sonnet-4-6",
+  "language": "es-CO",
+  "conformity": {
+    "framework": "MPIA-Bogotá",
+    "regulation": "Acuerdo 003/2025 CDTD",
+    "transversal_block": true
+  },
+  "blocks": [
+    {
+      "id": "bloque-1",
+      "name": "Gestión Documental",
+      "path": "bloque-1-gestion-documental",
+      "skills": [
+        {
+          "id": "oficio-memorando-entidad",
+          "name": "Oficio / Memorando / Circular",
+          "output": ".docx",
+          "risk_level": "Bajo",
+          "regulations": ["Ley 594/2000", "Acuerdo AGN 060/2001", "GTC-185"]
+        },
+        {
+          "id": "respuesta-pqrsdf-entidad",
+          "name": "Respuesta a PQRSDF",
+          "output": ".docx",
+          "risk_level": "Medio",
+          "regulations": ["Ley 1755/2015", "Ley 1437/2011", "Ley 1712/2014"]
+        },
+        {
+          "id": "acta-reunion-entidad",
+          "name": "Acta de Reunión",
+          "output": ".docx",
+          "risk_level": "Bajo",
+          "regulations": ["GTC-185", "NTC-ISO 9001:2015"]
+        },
+        {
+          "id": "informe-gestion-entidad",
+          "name": "Informe de Gestión",
+          "output": ".docx",
+          "risk_level": "Bajo",
+          "regulations": ["Decreto 1499/2017", "Decreto 612/2018"]
+        }
+      ]
+    },
+    {
+      "id": "bloque-2",
+      "name": "Planeación Estratégica",
+      "path": "bloque-2-planeacion-estrategica",
+      "skills": [
+        {
+          "id": "plan-accion-entidad",
+          "name": "Plan de Acción Institucional",
+          "output": ".xlsx",
+          "risk_level": "Bajo",
+          "regulations": ["Decreto 612/2018", "Decreto 1499/2017"]
+        },
+        {
+          "id": "ficha-indicador-entidad",
+          "name": "Ficha de Indicador",
+          "output": ".docx",
+          "risk_level": "Bajo",
+          "regulations": ["Decreto 1499/2017", "DAFP"]
+        },
+        {
+          "id": "matriz-riesgos-entidad",
+          "name": "Matriz de Riesgos",
+          "output": ".xlsx",
+          "risk_level": "Medio",
+          "regulations": ["DAFP Guía de Riesgos", "NTC-ISO 31000"]
+        },
+        {
+          "id": "mga-proyecto-inversion",
+          "name": "Ficha MGA Proyecto de Inversión",
+          "output": ".docx",
+          "risk_level": "Medio",
+          "regulations": ["DNP MGA", "Ley 152/1994"]
+        }
+      ]
+    },
+    {
+      "id": "bloque-3",
+      "name": "Contratación y Supervisión",
+      "path": "bloque-3-contratacion-supervision",
+      "skills": [
+        {
+          "id": "estudios-previos-entidad",
+          "name": "Estudios Previos",
+          "output": ".docx",
+          "risk_level": "Alto",
+          "regulations": ["Decreto 1082/2015", "Ley 80/1993", "Ley 1150/2007"]
+        },
+        {
+          "id": "informe-supervision-entidad",
+          "name": "Informe de Supervisión Contractual",
+          "output": ".docx",
+          "risk_level": "Medio",
+          "regulations": ["Ley 1474/2011 Arts. 83-85"]
+        },
+        {
+          "id": "concepto-tecnico-entidad",
+          "name": "Concepto Técnico",
+          "output": ".docx",
+          "risk_level": "Medio",
+          "regulations": ["GTC-185", "Gestión documental"]
+        }
+      ]
+    },
+    {
+      "id": "bloque-4",
+      "name": "Transparencia y Control",
+      "path": "bloque-4-transparencia-control",
+      "skills": [
+        {
+          "id": "paac-entidad",
+          "name": "Plan Anticorrupción y Atención al Ciudadano",
+          "output": ".xlsx",
+          "risk_level": "Bajo",
+          "regulations": ["Ley 1474/2011 Art. 73", "Decreto 612/2018"]
+        },
+        {
+          "id": "rendicion-cuentas-entidad",
+          "name": "Informe de Rendición de Cuentas",
+          "output": ".docx",
+          "risk_level": "Bajo",
+          "regulations": ["CONPES 3654/2010", "MIPG"]
+        },
+        {
+          "id": "informe-control-interno-entidad",
+          "name": "Informe de Control Interno",
+          "output": ".docx",
+          "risk_level": "Medio",
+          "regulations": ["Ley 87/1993", "Decreto 648/2017", "Decreto 1499/2017"]
+        }
+      ]
+    },
+    {
+      "id": "bloque-5",
+      "name": "Comunicación Institucional",
+      "path": "bloque-5-comunicacion-institucional",
+      "skills": [
+        {
+          "id": "presentacion-institucional-entidad",
+          "name": "Presentación Institucional",
+          "output": ".pptx",
+          "risk_level": "Bajo",
+          "regulations": ["WCAG 2.1", "Gobierno Digital"]
+        },
+        {
+          "id": "manual-procedimientos-entidad",
+          "name": "Manual de Procedimientos",
+          "output": ".docx",
+          "risk_level": "Bajo",
+          "regulations": ["DAFP", "NTC-ISO 9001:2015"]
+        },
+        {
+          "id": "carta-compromiso-entidad",
+          "name": "Carta de Compromiso / MOU",
+          "output": ".docx",
+          "risk_level": "Bajo",
+          "regulations": ["Ley 489/1998", "GTC-185"]
+        }
+      ]
+    },
+    {
+      "id": "transversal",
+      "name": "Conformidad IA",
+      "path": "transversal-conformidad-ia",
+      "skills": [
+        {
+          "id": "conformidad-mpia-bogota",
+          "name": "Diagnóstico de Conformidad MPIA-Bogotá",
+          "output": ".docx",
+          "risk_level": "N/A",
+          "regulations": ["Acuerdo 003/2025 CDTD"]
+        }
+      ]
+    }
+  ],
+  "total_skills": 18,
+  "total_regulations": 16
+}
